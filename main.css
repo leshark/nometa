@@ -23,6 +23,12 @@ article {
   font-style: italic;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
 footer {
   background: #334;
   padding: 1rem 0;
