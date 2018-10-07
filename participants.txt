@@ -1,0 +1,2 @@
+@ru_python_beginners
+@ru_python
