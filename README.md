@@ -4,7 +4,7 @@
 
 ## Инфографика на 30.05.2019
 
-![](distrib.png?raw=true "Pie chart")
+![](mentions.png?raw=true "Pie chart")
 
 
 ![](occur.png?raw=true "Bar chart")
