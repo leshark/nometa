@@ -18,6 +18,10 @@ article {
   line-height: 1.5em;
 }
 
+article > p {
+  text-align: justify;
+}
+
 .quote {
   font-family: Times, serif;
   font-style: italic;
