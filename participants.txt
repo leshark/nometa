@@ -1,0 +1,5 @@
+@ru_python_beginners
+@ru_python
+@botoid
+@grouplinux
+@android_ru
