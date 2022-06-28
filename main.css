@@ -17,6 +17,10 @@ article {
   font-size: 1.25rem;
   line-height: 1.5em;
 }
+.internationalisation {
+  width: 50%;
+  margin: 0 auto;
+}
 
 article > p {
   text-align: justify;
