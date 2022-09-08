@@ -18,8 +18,15 @@ article {
   line-height: 1.5em;
 }
 .internationalisation {
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
+  text-align: center;
+}
+.internationalisation > a {
+  margin-left: 2rem;
+}
+.internationalisation > a:first-of-type {
+  margin-left: 0;
 }
 
 article > p {
