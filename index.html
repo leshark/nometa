@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141126533-1"></script>
     <script>
@@ -15,87 +16,112 @@
     </script>
     <script>
         const lang = navigator.language || navigator.userLanguage;
-        if (lang.indexOf('uk') === 0)
-            window.location.href = 'uk.html';
-        if (lang.indexOf('ru') === 0)
-            window.location.href = 'ru.html';
-        if (lang.indexOf('uz') === 0)
-            window.location.href = 'uz.html';
+        switch (lang) {
+            case "uk":
+            case "ru":
+            case "uz":
+                window.location.href = lang + ".html";
+            default:
+                break;
+        }
     </script>
     <meta charset="utf-8">
     <title>nometa</title>
+    <!-- <title>Please, don't ask meta questions in chat!</title> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Meta-question - this is a question that implies other questions. They are wasting time! Yours, and other people who are trying to help you!">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://nometa.xyz">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Please, don't ask meta questions in chat!">
+    <meta property="og:description"
+        content="Meta-question - this is a question that implies other questions. They are wasting time! Yours, and other people who are trying to help you!">
+    <meta property="og:locale" content="en-US">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="nometa.xyz">
+    <meta property="twitter:url" content="http://nometa.xyz">
+    <meta name="twitter:title" content="Please, don't ask meta questions in chat!">
+    <meta name="twitter:description"
+        content="Meta-question - this is a question that implies other questions. They are wasting time! Yours, and other people who are trying to help you!">
     <link rel="stylesheet" media="screen" href="./main.css">
+
 <body>
-<article>
-    <div class="internationalisation">
-        <a href="ru.html">Русская версия</a>
-        <a href="uk.html">Українська версія</a>
-        <a href="uz.html">O'zbek tili</a>
-    </div>
-    <h1 lang="en">Please, don't ask meta questions in chat!</h1>
-
-    <p><b>Meta-question</b> - this is a question that implies other questions like:</p>
-
-    <div class="dialog-line -you">
-        <div class="content">
-            May I ask a question?
+    <article>
+        <div class="internationalisation">
+            <a href="ru.html">Русская версия</a>
+            <a href="uk.html">Українська версія</a>
+            <a href="uz.html">O'zbek tili</a>
         </div>
-    </div>
+        <h1 lang="en">Please, don't ask meta questions in chat!</h1>
 
-    <div class="dialog-line -you">
-        <div class="content">
-            Is there anyone experienced in N?
+        <p><b>Meta-question</b> - this is a question that implies other questions like:</p>
 
+        <div class="dialog-line -you">
+            <div class="content">
+                May I ask a question?
+            </div>
         </div>
-    </div>
 
-    <div class="dialog-line -you">
-        <div class="content">
-            Has anyone here taken a course from Google on Coursera? I have a text analysis question...
+        <div class="dialog-line -you">
+            <div class="content">
+                Is there anyone experienced in N?
+
+            </div>
         </div>
-    </div>
 
-    <div class="dialog-line -you">
-        <div class="content">
-            Guys, I have a question about %framework_name%
-
+        <div class="dialog-line -you">
+            <div class="content">
+                Has anyone here taken a course from Google on Coursera? I have a text analysis question...
+            </div>
         </div>
-    </div>
 
-    <p class="quote"> — "I see, but what's wrong with these questions and why shouldn't I ask them?"</p>
+        <div class="dialog-line -you">
+            <div class="content">
+                Guys, I have a question about %framework_name%
 
-    <p>— They are wasting time! Yours, and other people who are trying to help you!
-        You're trying to be polite by not jumping straight to your problem, as people do in person.
+            </div>
+        </div>
 
-        But chat is different. People type much slower than they speak.
-        Instead of being polite, you're making the other person wait, whilst you formulate your question,
+        <p class="quote"> — "I see, but what's wrong with these questions and why shouldn't I ask them?"</p>
 
-        which results in a loss of productivity.</p>
+        <p>— They are wasting time! Yours, and other people who are trying to help you!
+            You're trying to be polite by not jumping straight to your problem, as people do in person.
 
-    <p>The same applies to messages like this:<i>"Hello"</i>,
-        <i>"Hi. Are you here?"</i>, <i>"Do you have a minute??"</i>, <i>"Ping"</i>. Just ask your question!</p>
+            But chat is different. People type much slower than they speak.
+            Instead of being polite, you're making the other person wait, whilst you formulate your question,
 
-    <p>In addition, when you ask a question right away, the possibility of asynchronous interaction opens up.
-        If the other person is unavailable and you leave before they return,
-        they can still answer the question instead of looking at your <i>"Hi"</i> and wondering what happened.</p>
+            which results in a loss of productivity.</p>
 
-</article>
+        <p>The same applies to messages like this:<i>"Hello"</i>,
+            <i>"Hi. Are you here?"</i>, <i>"Do you have a minute??"</i>, <i>"Ping"</i>. Just ask your question!
+        </p>
 
-<footer>
+        <p>In addition, when you ask a question right away, the possibility of asynchronous interaction opens up.
+            If the other person is unavailable and you leave before they return,
+            they can still answer the question instead of looking at your <i>"Hi"</i> and wondering what happened.</p>
 
-    <div class="row">
-        Inspired by&nbsp;— <a href="http://www.nohello.com">www.nohello.com</a> (Brandon High), link to
-        <a href="https://github.com/leshark/nometa">
-            Github
-            <svg aria-hidden="true" id="octicon-icon" height="24" version="1.1" width="24">
-                <path fill-rule="evenodd"
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
-            </svg>
-        </a>
-    </div>
+    </article>
 
-</footer>
+    <footer>
+
+        <div class="row">
+            Inspired by&nbsp;— <a href="http://www.nohello.com">www.nohello.com</a> (Brandon High), link to
+            <a href="https://github.com/leshark/nometa">
+                Github
+                <svg aria-hidden="true" id="octicon-icon" height="24" version="1.1" width="24">
+                    <path fill-rule="evenodd"
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+    </footer>
 
 </body>
+
 </html>
