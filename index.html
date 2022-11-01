@@ -15,7 +15,14 @@
     </script>
     <script>
         const lang = navigator.language || navigator.userLanguage;
-        if (window.location.search && !window.location.search.contains("redirect=0")) {
+        if (!window.location.search) {
+            redirect_by_language();
+        } else {
+            if (!window.location.search.includes("redirect=0")) {
+                redirect_by_language();
+            };
+        };
+        function redirect_by_language() {
             if (lang.indexOf('uk') === 0)
                 window.location.href = 'uk.html';
             if (lang.indexOf('ru') === 0)
