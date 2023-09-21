@@ -20,8 +20,8 @@
         } else {
             if (!window.location.search.includes("redirect=0")) {
                 redirect_by_language();
-            };
-        };
+            }
+        }
         function redirect_by_language() {
             if (lang.indexOf('uk') === 0)
                 window.location.href = 'uk.html';
@@ -29,7 +29,9 @@
                 window.location.href = 'ru.html';
             if (lang.indexOf('uz') === 0)
                 window.location.href = 'uz.html';
-        };
+            if (lang.indexOf('kaa') === 0)
+                window.location.href = 'kaa.html';
+        }
     </script>
     <meta charset="utf-8">
     <title>nometa</title>
@@ -41,6 +43,7 @@
         <a href="ru.html">Русская версия</a>
         <a href="uk.html">Українська версія</a>
         <a href="uz.html">O'zbek tili</a>
+        <a href="kaa.html">Qaraqalpaq tili</a>
     </div>
     <h1 lang="en">Please, don't ask meta questions in chat!</h1>
 
@@ -55,7 +58,6 @@
     <div class="dialog-line -you">
         <div class="content">
             Is there anyone experienced in N?
-
         </div>
     </div>
 
@@ -68,7 +70,6 @@
     <div class="dialog-line -you">
         <div class="content">
             Guys, I have a question about %framework_name%
-
         </div>
     </div>
 
@@ -88,7 +89,6 @@
     <p>In addition, when you ask a question right away, the possibility of asynchronous interaction opens up.
         If the other person is unavailable and you leave before they return,
         they can still answer the question instead of looking at your <i>"Hi"</i> and wondering what happened.</p>
-
 </article>
 
 <footer>
